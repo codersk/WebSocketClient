@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Realtime Chart</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="chartdiv"></div>
+  <div class="row">
+    <button id="start" name="start" onclick="javascript:startReceiving();">
+      Start Receiving
+    </button>
+    <button id="stop" name="stop" onclick="javascript:stopReceiving();">
+      Stop Receiving
+    </button>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4>Server log:</h4>
+      <div id="server-log"></div>
+    </div>
+  </div>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+  <script src="./websocket_client.js"></script>
+</body>
+</html>
